@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built using React, Vite, and Tailwind CSS. It showcases my projects, skills, and experience as a computer science graduate, with a focus on practical software development and AI-assisted tools.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://joshb610.github.io/portfolio/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 About This Project
 
-## Expanding the ESLint configuration
+This portfolio is a static site deployed using GitHub Pages. It highlights:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* A featured project: AI-assisted CAD generator for creating customizable 3D (STL) files
+* Additional development work and technical skills
+* Contact and professional information
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The site is built with modern frontend tools and optimized for fast loading and responsiveness.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* GitHub Pages (deployment)
+
+---
+
+## 🚀 Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/joshb610/portfolio.git
+cd portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Building the Site
+
+To generate the production-ready static files:
+
+```bash
+npm run build
+```
+
+This creates a `/dist` folder containing the compiled site.
+
+---
+
+## 🚀 Deploying Updates (GitHub Pages)
+
+This project is deployed by pushing the built `/dist` folder to the `main` branch.
+
+### Steps to deploy:
+
+1. Make your changes in the source code
+
+2. Build the project:
+
+```bash
+npm run build
+```
+
+3. Navigate to the build output:
+
+```bash
+cd dist
+```
+
+4. Commit and push changes:
+
+```bash
+git add .
+git commit -m "update site"
+git push -f origin main
+```
+
+---
+
+## ⚠️ Notes
+
+* The `vite.config.js` file includes:
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+base: '/portfolio/'
 ```
+
+This is required for GitHub Pages to correctly resolve asset paths.
+
+* If assets (CSS/JS) fail to load, make sure:
+
+  * You rebuilt the project after changes
+  * You pushed the updated `/dist` folder
+
+---
+
+## 📬 Contact
+
+* GitHub: https://github.com/joshb610
+* LinkedIn: (add your link here)
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
