@@ -65,50 +65,19 @@ This creates a `/dist` folder containing the compiled site.
 
 ---
 
-## 🚀 Deploying Updates (GitHub Pages)
+## 🚀 Deploying
 
-This project is deployed by pushing the built `/dist` folder to the `main` branch.
-
-### Steps to deploy:
-
-1. Make your changes in the source code
-
-2. Build the project:
-
-```bash
-npm run build
-```
-
-3. Navigate to the build output:
-
-```bash
-cd dist
-```
-
-4. Commit and push changes:
-
-```bash
-git add .
-git commit -m "update site"
-git push -f origin main
-```
-
----
+Deployment is handled automatically via GitHub Actions. Pushing to `main` triggers the workflow, which builds the site and deploys it to GitHub Pages — no manual steps required.
 
 ## ⚠️ Notes
 
-* The `vite.config.js` file includes:
+* The `vite.config.ts` file sets:
 
 ```js
 base: '/portfolio/'
 ```
 
 This is required for GitHub Pages to correctly resolve asset paths.
-
-* If assets (CSS/JS) fail to load, make sure:
-
-  * You rebuilt the project after changes
-  * You pushed the updated `/dist` folder
 
 ---
 
