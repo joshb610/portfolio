@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
 
         <h2 className="animate-fade-in-up delay-300 text-xl md:text-2xl text-slate-400 font-medium mb-8">
-          Frontend Developer & CS Graduate
+          Software Developer & CS Graduate
         </h2>
 
         <p className="animate-fade-in-up delay-400 text-slate-400 text-base md:text-lg leading-relaxed mb-12" style={{ textAlign: 'center' }}>

@@ -2,8 +2,16 @@ import { useSectionFade } from '../hooks/useSectionFade'
 
 const PROJECTS = [
   {
+    title: 'Gridfinity Label Generator',
+    description: 'Web-based tool for designing and exporting 3D-printable labels for Gridfinity storage bins. Features a FastAPI backend with CAD geometry generation, a Three.js 3D preview, multiple label styles, icon picker, and STEP/STL export.',
+    tags: ['Python', 'FastAPI', 'JavaScript', 'Three.js', '3D Printing', 'CAD'],
+    github: 'https://github.com/joshb610/GridfinityLabelGenerator',
+    status: 'Live',
+    icon: '🏷️',
+  },
+  {
     title: 'OpenHardwareBoard',
-    description: 'Website for an open-source 3D printed modular design board. Provides documentation, component gallery, and assembly guides for the hardware project.',
+    description: 'Local website for an open-source 3D printed modular design board. Provides documentation, component gallery, and assembly guides for the hardware project.',
     tags: ['Web', 'Open Source', '3D Printing', 'Hardware'],
     github: 'https://github.com/joshb610/OpenHardwareBoard',
     status: 'Live',

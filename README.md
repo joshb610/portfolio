@@ -115,7 +115,7 @@ This is required for GitHub Pages to correctly resolve asset paths.
 ## 📬 Contact
 
 * GitHub: https://github.com/joshb610
-* LinkedIn: (add your link here)
+* LinkedIn: https://www.linkedin.com/in/joshbutler-dev
 
 ---
 
